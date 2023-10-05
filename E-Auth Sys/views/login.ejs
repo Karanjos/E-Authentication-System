@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_A-Auth</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container py-5">
+    <div class="row mb-4">
+      <div class="col-md-8 col-xl-6 text-center mx-auto">
+        <p class="fw-bold text-success mb-2">Log in</p>
+        <h2 class="fw-bold">Welcome back</h2>
+      </div>
+    </div>
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-6 col-xl-4">
+      <div class="card">
+        <div class="card-body text-center d-flex flex-column align-items-center">
+          <div class="rounded-circle p-3 bg-primary mb-3">
+            <i class="material-icons color-white">person_outline</i>
+          </div>
+          <form method="POST">
+            <div class="mb-3">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" name="email" />
+            </div>
+            <div class="mb-3">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control" name="password" />
+            </div>
+            <div class="mb-3">
+              <input type="radio" name="login_type" value="otp" class="btn-check btn-success" id="option1">
+              <label class="btn btn-outline-success" for="option1">Login with OTP</label>
+              <input type="radio" name="login_type" value="qrcode" class="btn-check btn-primary" id="option2">
+              <label class="btn btn-outline-success" for="option2">Login with QRCode</label>
+            </div>
+            <div class="mb-3">
+              <button class="btn btn-primary my-2 w-100" type="submit">Login</button>
+            </div>
+            <div class="mb-3">
+              <p class="text-muted">Haven't registered?</p>
+              <a href="/register">Sign up</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
